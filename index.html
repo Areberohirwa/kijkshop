@@ -1,12 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>Whack -a- mole</title>
+    <link rel="stylesheet" href="/css/wamstyle.css">
 </head>
+
 <body>
-    <h1>welcome
-    </h1>
+
+    <h1>Whack a mole</h1>
+    <main>
+        <article>
+            <h2 class="player-name"> playername </h2>
+            <h2>Your score: <span id="score">0</span></h2>
+            <h3>Total attempts:<span class="attempts"> 0</span></h3>
+            <h3>Missed hits: <span class="missed-hits">0</span></h3>
+            <h3>Round scored: <span class="rounds">0</span></h3>
+
+            <button id="start-btn">Start</button>
+        </article>
+
+        <article>
+            <h2>Time Left:
+                <span id="time-left">60</span>
+                sec
+            </h2>
+        </article>
+
+        <article class="container">
+        </article>
+
+        <article>
+            <h4 class="message-credits"></h4>
+        </article>
+    </main>
+    <script src="wammain.js"></script>
 </body>
+
 </html>

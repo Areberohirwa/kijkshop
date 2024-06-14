@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --color: #ffffff;
+    --background: lightsalmon;
+}
+
+body {
+
+    background-color: burlywood;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    text-shadow: -1px 1px 0 #41ba45,
+        1px 1px 0 #c63d2b,
+        1px -1px 0 #42afac,
+        -1px -1px 0 #c6c23f;
+}
+
+article:nth-child(1) {
+    padding-left: 10px;
+    padding-top: 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    color: rgb(26, 64, 77);
+    background-color: lightsalmon;
+    width: 340px;
+    height: 340px;
+    position: relative;
+    top: -20px;
+    left: 20px;
+    font-size: 20px;
+}
+
+
+
+article:nth-child(1) h2:nth-child(2) {
+    padding-top: 5px;
+    padding-left: 2px;
+    font-size: 25px;
+}
+
+article:nth-child(1) h3 {
+    padding-top: 15px;
+    padding-left: 2px;
+}
+
+article:nth-child(1) button {
+    font-weight: 700;
+    padding: 5px;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 5px;
+    left: 95px;
+    top: 70px;
+    width: 100px;
+    transition: 0.7s;
+}
+
+article:nth-child(1) button:hover {
+    transform: translateY(-3px);
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+article:nth-child(1) .player-name {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+article:nth-child(2) {
+    position: relative;
+    top: 650px;
+    right: 0px;
+}
+
+article:nth-child(2) h2 {
+    padding-left: 5px;
+    padding-top: 4px;
+    float: right;
+    position: relative;
+    bottom: 132px;
+    right: 102px;
+    font-size: 20px;
+    border: 3px solid wheat;
+    background-color: dimgray;
+    border-radius: 10px;
+    width: 220px;
+    height: 37px;
+}
+
+article:nth-child(3) {
+    width: fit-content;
+    position: relative;
+    bottom: 320px;
+    left: 500px;
+}
+
+
+.message-credits {
+    position: absolute;
+    top: 550px;
+    left: 105px;
+    color: darkgreen;
+
+}
+
+.animation {
+    animation-name: disappearleft;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes disappearleft {
+    0% {
+        opacity: 100;
+        transform: translateY(-10px);
+    }
+
+    25% {
+        transform: translateY(10px);
+    }
+
+    50% {
+
+        transform: translateY(-15px);
+    }
+
+    75% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.grid {
+    width: 490px;
+}
+
+.square {
+    height: 150px;
+    visibility: visible;
+    width: 150px;
+    float: left;
+    margin: 0.5px;
+    background-color: chocolate;
+    border: solid purple 2px;
+    border-radius: 5px;
+}
+
+.player-name {
+    color: chocolate;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: -1px -1px 0px var(--background),
+        3px 3px 0px var(--background),
+        6px 6px 0px #00000055;
+}
+
+.mole {
+    background: url(/img/3mole.jpg);
+    object-fit: fill;
+    height: 150px;
+    width: 150px;
+
+}
+
+.grid-large {
+    width: 685px;
+}
+
+.grid-larger {
+    width: 858px;
+}
+
+.grid-largest {
+    width: 998px;
+}
